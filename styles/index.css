@@ -147,6 +147,11 @@ footer{
     text-align: justify;
 }
 
+.footer-div p,li{
+    font-size: 16px;
+
+}
+
 .footer-div img{
     align-self: flex-start;
 }
@@ -186,7 +191,7 @@ footer h4{
 }
 
 .footer-div-heading{
-    font-size: 14px;
+    font-size: 24px;
     font-weight: bolder;
     text-transform: uppercase;
     color: black;
@@ -241,7 +246,7 @@ footer h4{
 
 #journey{
     display: flex;
-    padding: 64px;
+    padding:160px 64px;
     flex-wrap: wrap;
     overflow: wrap;
 }
@@ -252,6 +257,10 @@ footer h4{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.journey-left p{
+    padding-right: 16px;
 }
 
 .journey-right{
@@ -308,8 +317,8 @@ footer h4{
 
 .journey-right img{
     min-width: 100%;
-    width: 550px;
-    height: 550px;
+    width: 450px;
+    height: 450px;
     border-radius: 16px;
 }
 
@@ -332,7 +341,7 @@ footer h4{
 }
 
 #testimonials{
-    padding:160px 64px 64px 64px;
+    padding:160px 64px 0px 64px;
     text-align: center;
 }
 
@@ -409,13 +418,14 @@ footer h4{
     text-align: center;
     color: rgba(0, 85, 128, 0.7);
     margin-top: 14px;
+    padding-top:8px;
     max-width: 704px;
     margin: auto;
 }
 
 #main{
     display: flex;
-    padding:180px 128px;
+    padding:180px 64px 0px 64px;
     /* flex-wrap: wrap; */
     flex-direction: row;
 }
@@ -423,10 +433,11 @@ footer h4{
 .main-left{
     flex:1;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: left;
     padding-right: 16px;
     flex-direction: column;
+
 }
 
 .main-left img{
@@ -459,7 +470,7 @@ footer h4{
 }
 
 #our_team{
-    padding: 0px 96px 48px 96px;
+    padding: 160px 96px 48px 96px;
 
 }
 
@@ -500,13 +511,14 @@ footer h4{
 }
 
 #aboutus{
-    padding: 80px 64px;
+    padding: 160px 64px 0 64px;
 }
 
 #aboutus h1{
     font-size: 72px !important;
     font-weight: bolder;
     text-transform: uppercase;
+    color: rgba(0, 85, 128, 1)
 }
 
 .aboutus-cards{
@@ -603,7 +615,9 @@ footer h4{
         padding-left: 64px;
         padding-right: 64px;
         flex-wrap: wrap;
+        text-align: center;
     }
+
 
 }
 
@@ -625,12 +639,22 @@ footer h4{
         width: 50%;
     }
 
+    #aboutus{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 
     #main{
         padding-left: 32px;
         padding-right: 32px;
     }
 
+}
+
+@media only screen and (max-width:600px){
+    .aboutus-card{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:398px){
@@ -647,4 +671,5 @@ footer h4{
         padding-left: 16px;
         padding-right: 16px;
     }
+
 }
