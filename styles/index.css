@@ -75,7 +75,6 @@ html {
 .nav-li a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
-
 }
 
 /* unvisited link */
@@ -465,8 +464,8 @@ footer h4{
 }
 
 .main-right img{
-    width: 560px;
-    height: 432px;
+    width: 500px;
+    height: 500px;
 }
 
 #our_team{
