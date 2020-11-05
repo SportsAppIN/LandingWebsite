@@ -155,10 +155,15 @@ footer{
     align-self: flex-start;
 }
 
+.footer-div li img{
+    width:16px;
+    height: 16px;
+}
 
 .footer-div li{
     margin: auto;
     display: flex;
+    align-items: center;
 }
 
 .footer-div li a{
@@ -654,6 +659,11 @@ footer h4{
     .aboutus-card{
         width: 100%;
     }
+
+    .main-right img{
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media only screen and (max-width:398px){
@@ -670,5 +680,6 @@ footer h4{
         padding-left: 16px;
         padding-right: 16px;
     }
+
 
 }

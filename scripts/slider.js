@@ -18,25 +18,25 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-window.onscroll = function() {
-    growShrinkLogo()
-  };
+// window.onscroll = function() {
+//     growShrinkLogo()
+//   };
   
-  function growShrinkLogo() {
-      document.getElementById("Logo").style.transition = "all 0.3s";
-    var Logo = document.getElementById("Logo")
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-      Logo.style.width = '50px';
-      Logo.style.height = '50px'
-    } else {
-      Logo.style.width = '90px';
-      Logo.style.height = '90px'
-    }
-  }
+//   function growShrinkLogo() {
+//       document.getElementById("Logo").style.transition = "all 0.3s";
+//     var Logo = document.getElementById("Logo")
+//     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+//       Logo.style.width = '50px';
+//       Logo.style.height = '50px'
+//     } else {
+//       Logo.style.width = '90px';
+//       Logo.style.height = '90px'
+//     }
+//   }
 
-  $(document).ready(function(){
-    $(this).scrollTop(0);
-});
+//   $(document).ready(function(){
+//     $(this).scrollTop(0);
+// });
 
 
 
@@ -153,8 +153,8 @@ $('.blog-slider').slick({
 });
 
 var image = document.getElementsByClassName('thumbnail');
-new simpleParallax(image, {
-  scale: 1.7,
+// new simpleParallax(image, {
+//   scale: 1.7,
   
-});
+// });
 
