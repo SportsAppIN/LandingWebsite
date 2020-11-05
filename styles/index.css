@@ -659,10 +659,32 @@ footer h4{
     .aboutus-card{
         width: 100%;
     }
+    .journey-right img{
+        width: 400px;
+        height: 400px;
 
+    }
     .main-right img{
         width: 400px;
         height: 400px;
+    }
+    .bars{
+        display: none !important;
+    }
+    .location-tag-blogname{
+        display: none;
+    }
+
+    #our_team {
+        padding: 160px 8px 48px 8px !important;
+    }
+
+    .navbar{
+        position: static !important;
+        z-index: 1000;
+    }
+    .sportsApp-container{
+        z-index: -2;
     }
 }
 
@@ -679,7 +701,27 @@ footer h4{
     #main{
         padding-left: 16px;
         padding-right: 16px;
+    }  
+    
+    .journey-right img{
+        width: 200px;
+        height: 200px;
+
+    }
+    .main-right img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .bars{
+        display: none;
     }
 
 
+}
+
+.contactus-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

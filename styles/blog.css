@@ -174,3 +174,22 @@
     /* font-size: 32px; */
 }
 
+
+@media only screen and (max-width:990px){
+    .right-aside-container{
+        padding: 24px;;
+    }
+    
+    .blog-section{
+        /* font-size: 32px; */
+    }
+    .about-us-container{
+
+    }
+    .page-container, .readblog-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
