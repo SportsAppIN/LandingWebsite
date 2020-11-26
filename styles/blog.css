@@ -193,3 +193,16 @@
     }
 }
 
+@media only screen and (max-width:398px){
+
+    #footer{
+        text-align: center;
+    }
+    .location{
+        position: relative;
+        top: 0px;
+    }
+    .footer-div{
+        margin-top: 100px;
+    }
+}

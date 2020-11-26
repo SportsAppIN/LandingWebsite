@@ -3,6 +3,48 @@
     src: url('../fonts/league-spartan/1.ttf') format('truetype');
 }
 
+#dots, #dots2, #dots3, #dots4  {
+    display: none;
+    color: #005580;
+}
+#myBtn, #myBtn2, #myBtn3, #myBtn4{
+    display: none;
+    height: 12px;
+    font-size: 12px;
+    background: transparent;
+    color: #005580;
+    border: none;
+}
+.termsCondition{
+    padding-top: 120px; padding-left: 24px; padding-right: 24px; text-align: left; margin: 0px 128px; 
+    color: rgba(0, 0, 0, 0.9);
+}
+.termsCondition p{
+    margin-top: 24px;
+
+}
+.termsCondition a{
+    font-weight: bold; letter-spacing: 0.015in;
+}
+.termsCondition h2{
+    font-weight:600;  letter-spacing: 0.01in;
+}
+
+.policies p{
+    margin-top: 24px; 
+    text-align: justify;
+
+}
+.policies a{
+    font-weight: bold; letter-spacing: 0.015in;
+}
+.policies h2{
+    font-weight:600;  letter-spacing: 0.01in;
+}
+.policies{
+    padding-top: 120px; padding-left: 24px; padding-right: 24px; text-align: center; margin: 0px 128px; 
+    color: rgba(0, 0, 0, 0.9);
+}
 *{
     margin:0;
     padding: 0;
@@ -694,21 +736,39 @@ footer h4{
 }
 
 @media only screen and (max-width:398px){
-    .navbar-brand{
-        position: relative;
-        top:0px;
-    }    
-
+  
+    h1{
+        font-size: 40px !important;
+    }
     footer{
         flex-direction: column;
     }
-
+    .navbar-brand img{
+        width: 150px;
+        height: 120px;
+    }
     #main{
-        padding-left: 16px;
-        padding-right: 16px;
-    }  
-    
+        align-items: center;
+        padding: 16px 16px;
+        margin-top: 20px;
+    }
+    .main-left{
+        align-items: center;
+    }   
+    .main-left h1 {
+        font-style: normal;
+        font-weight: bolder;
+        line-height: 42px;
+    }
+    .main-left img{
+        margin-top: 20px;
+        width: 200px;
+    }
+    .main-right{
+        margin-top: 88px;
+    }
     .journey-right img{
+        
         width: 200px;
         height: 200px;
 
@@ -717,11 +777,114 @@ footer h4{
         width: 200px;
         height: 200px;
     }
+    #aboutus{
+        align-self: center;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #aboutus h1 {
+        text-align: center;
+        font-size: 40px !important;
+    }
 
+    .feature-name{
+        font-size: 16px !important;
+    }
+    .aboutus-card{
+        text-align: center;
+        width: 50%;
+        padding: 2px 2px;
+    }
+    #aboutus .feature-detail{
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0px;
+    }
     .bars{
         display: none;
     }
+    #journey{
+        text-align: center;
+        padding: 0px 0px;
+    }
+    #journey .section-head{
+        width: 200px;
+        align-self: center;
+    }
+    .journey-left h1{
+        text-align: center;
+        font-weight: bold;
+    }
+    .journey-left{
+        width: 300px;
+        text-align: center;
+        padding: 16px 16px;
+    }
+    .journey-details{
+        padding: 8px 8px;
+        line-height: normal;
+    }
+    .card-row{
+        flex-wrap: wrap;
+    }
 
+    .cards{
+        flex-grow: 1;
+        margin-right: 2px;
+        margin-left: 2px;
+        text-align: center;
+    }
+
+    #sponsors{
+        margin-top: 32px;
+        padding: 8px 8px;
+    }
+
+    .slider{
+        width: 56px !important;
+    }
+    #testimonials{
+        margin-top: 40px;
+        padding: 8px 8px;
+    }
+    .testimonials-details{
+        line-height: 22px;
+        padding: 16px 0px;
+    }
+    #sponsors h1{
+        font-size: 40px;
+    }
+    #our_team{
+        padding: 32px 8px !important;
+        text-align: center;}
+
+#footer{
+    text-align: center;
+    display: block;
+}
+.footer-div{
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+.footer-div p{
+    line-height: 18px;
+}
+.footer-googleplay{
+    margin-top: 16px;
+    height: 18px;
+}
+.copywrite-text p{
+    font-size: 10px;
+    line-height: 12px;
+}
+.madeinindia{
+    margin-top: 60px;
+}
+.navbar-collapse{
+    z-index: 1150;
+    color:white
 
 }
 
@@ -729,6 +892,34 @@ footer h4{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#dots, #dots2, #dots3, #dots4 {
+    display: inline;
+}
+#more, #more2, #more3, #more4 {
+    display: none;
+}
+#myBtn, #myBtn2, #myBtn3, #myBtn4{
+    display: inline;
+}
+.numscroller{
+    font-size: 16px;
+}
+.cards h4{
+    padding: 0px;
+}
+.cards p{
+    line-height: 18px ;
+}
+.policies{
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0px 0px;
+}
+.policies p{
+    font-size: 14px;
+    line-height: 18px;
+}
 }
 /* 
 .carousel-inner .carousel-item {
