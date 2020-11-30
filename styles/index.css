@@ -206,7 +206,9 @@ footer{
     width:16px;
     height: 16px;
 }
-
+.footer-div p{
+    color: rgba(0, 0, 0, 0.9);
+}
 .footer-div li{
     margin: auto;
     display: flex;
@@ -521,8 +523,8 @@ footer h4{
 }
 
 #our_team{
-    padding: 160px 96px 48px 96px;
-
+    text-align: center;
+    padding: 160px 96px 0px 96px;
 }
 
 #our_team  .in-div img{
@@ -534,7 +536,8 @@ footer h4{
 }
 
 #our_team .card-row {
-    padding: 50px 0;
+    padding: 0px 0;
+    margin: 0px 20px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -774,8 +777,8 @@ footer h4{
 
     }
     .main-right img{
-        width: 200px;
-        height: 200px;
+        width: 240px;
+        height: 240px;
     }
     #aboutus{
         align-self: center;
@@ -861,12 +864,14 @@ footer h4{
 
 #footer{
     text-align: center;
-    display: block;
 }
 .footer-div{
     margin-top: 40px;
     text-align: center;
     width: 100%;
+}
+.footer-div img{
+    align-self: center;
 }
 .footer-div p{
     line-height: 18px;
@@ -920,6 +925,11 @@ footer h4{
     font-size: 14px;
     line-height: 18px;
 }
+.sponsor-img{
+    width: 120px !important;
+    height: 56px !important;
+}
+
 }
 /* 
 .carousel-inner .carousel-item {
