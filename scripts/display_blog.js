@@ -6,11 +6,14 @@ const app = () => {
 
     let blogs = [];
 
-    let url = 'https://api.sportsapp.co.in/public/blog';
+    let url = 'https://sportsapp.co.in/public/blog';
 
     let options = {
             method:'GET',
-            mode: 'cors'
+            mode: 'cors',
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
         };
 
 

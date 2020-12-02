@@ -3,13 +3,16 @@ const similarApp = (tags, blogID) => {
 
     let similarBlogs = [];
 
-    let url = 'http://api.sportsapp.co.in/public/blog/?blog_id='+ blogID +'&tags='+JSON.stringify(tags);
+    let url = 'https://sportsapp.co.in/public/blog/?blog_id='+ blogID +'&tags='+JSON.stringify(tags);
     
     console.log(url);
     
     let options = {
             method:'GET',
-            mode: 'cors'
+            mode: 'cors',
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
         };
 
     fetch(url,options)

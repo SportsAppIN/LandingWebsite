@@ -13,12 +13,15 @@ const app = () => {
     };
 
 
-    let url = 'https://api.sportsapp.co.in/public/blog/?id=' + blogID ;
+    let url = 'https://sportsapp.co.in/public/blog/?id=' + blogID ;
 
     
     let options = {
             method:'GET',
-            mode: 'cors'
+            mode: 'cors',
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
         };
 
     fetch(url,options)

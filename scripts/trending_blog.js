@@ -7,11 +7,14 @@ const trendingApp = () => {
         {title:'How To Make Your Business Succeed in 2020.',_id:123}
     ];
 
-    let url = 'http://api.sportsapp.co.in/public/blog/?trending=true';
+    let url = 'https://sportsapp.co.in/public/blog/?trending=true';
     
     let options = {
             method:'GET',
-            mode: 'cors'
+            mode: 'cors',
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
         };
 
     fetch(url,options)
