@@ -14,7 +14,12 @@
             link1.setAttribute('property','og:type');
             link1.content = "video.movie"
             document.getElementsByTagName('head')[0].appendChild(link1);
-
+            
+            var link2 = document.createElement("meta");
+            link2.setAttribute('property','og:video');
+            link2.content = document.location.hash.substring(1);
+            document.getElementsByTagName('head')[0].appendChild(link2);
+            
         })();
     </script>
     
