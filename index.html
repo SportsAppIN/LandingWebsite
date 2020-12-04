@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html prefix = "og: https://ogp.me/ns#">
+<html lang="en" prefix = "og: https://ogp.me/ns#">
 
 <head>
 
@@ -8,7 +8,7 @@
         (()=>{
             var link = document.createElement("meta");
             link.setAttribute('property', 'og:url');
-            link.content = document.location.hash.substring(1);
+            link.content = document.location.search.substring(1);
             document.getElementsByTagName('head')[0].appendChild(link);
             var link1 = document.createElement("meta");
             link1.setAttribute('property','og:type');
@@ -17,7 +17,7 @@
             
             var link2 = document.createElement("meta");
             link2.setAttribute('property','og:video');
-            link2.content = document.location.hash.substring(1);
+            link2.content = document.location.search.substring(1);
             document.getElementsByTagName('head')[0].appendChild(link2);
             
         })();
