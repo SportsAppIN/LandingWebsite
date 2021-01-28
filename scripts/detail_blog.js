@@ -85,12 +85,14 @@ const app = () => {
         </div>
 
         <div class="img-div">
+        <a href = "https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp">
             <img class="active-img"src="`
                 + 
                     blog.previewInteractiveContentUrl
 
                 +
             `">
+            </a>
         </div>
         
         <p id="add-text"class="active-text">`

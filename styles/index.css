@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'League_Spartan';
-    src: url('../fonts/league-spartan/1.ttf') format('truetype');
+    font-family: Roboto;
+    src: url('../fonts/league-spartan/2.ttf') format('truetype');
 }
 
 #dots, #dots2, #dots3, #dots4  {
@@ -49,7 +49,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: League_Spartan;
+    font-family: Roboto;
     /* font-weight: 400; */
 }
 
@@ -464,7 +464,7 @@ footer h4{
 }
 
 .slider-div .slide-text{
-    font-family: Rockwell;
+    font-family: Roboto;
     font-style: italic;
     font-weight: bold;
     font-size: 20px;

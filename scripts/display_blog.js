@@ -49,11 +49,18 @@ const app = () => {
         let date_updated = date.getDate() +' '+ monthNames[date.getMonth()] +' ' + date.getFullYear();
 
         return `
-        <h2 class="blog-title">`
-        + 
-            blog.title 
+        <a href = "readblog.html#`
         +
-        `</h2>
+        blog._id
+        +
+        ' " > '
+        + 
+        '<h2 class="blog-title">'+
+        blog.title 
+        +
+        '</h2>'
+        +
+        `</a>
         
         <div class="author-container active-text">
             <div class="author">
@@ -70,11 +77,13 @@ const app = () => {
         
 
         <div class="img-div">
+        <a href = "https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp">
             <img class="active-img"src="`
             +
                 blog.previewInteractiveContentUrl
             +
             `">
+        </a>    
         </div>
         
         <p id="add-text"class="active-text">`
@@ -127,7 +136,7 @@ const app = () => {
 
 
             
-        let categoryUrl = 'https://api.sportsapp.co.in/public/blog/?category=' + category ; 
+        let categoryUrl = 'https://sportsapp.co.in/public/blog/?category=' + category ; 
         // let categoryUrl = 'https://beta.sportsapp.co.in/public/blog'; 
 
         if(category==="all"){
