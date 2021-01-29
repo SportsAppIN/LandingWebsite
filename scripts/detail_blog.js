@@ -57,7 +57,7 @@ const app = () => {
         document.querySelector(".location-tag-blogname").innerHTML = ``+blog.title+``;
 
         let category = categoryContent(blog.tags);
-        let content = atob(blog.contentHtml);
+        let content = decodeURIComponent(escape(atob(blog.contentHtml)));
         let date = new Date(blog.createdAt);
 
         const monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec" ];
