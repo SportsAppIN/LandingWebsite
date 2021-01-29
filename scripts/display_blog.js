@@ -77,7 +77,7 @@ const app = () => {
         
 
         <div class="img-div">
-        <a href = "https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp">
+        <a href = "https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp" target="_blank">
             <img class="active-img"src="`
             +
                 blog.previewInteractiveContentUrl
