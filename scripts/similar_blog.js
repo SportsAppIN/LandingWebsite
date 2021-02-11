@@ -52,9 +52,11 @@ const similarApp = (tags, blogID) => {
                 const tableRow = document.createElement('tr');
                 const tableData = document.createElement('td');
                 const ahref = document.createElement('a');
-                
-                let href = 'readblog.html#' + blog._id;
-
+                ahref.onclick = ()=>{
+                    document.location = ahref.href;
+                    document.location.reload();
+                }
+                let href = '#' + blog._id;
                 ahref.setAttribute('href',href);
                 ahref.textContent = blog.title;
                 tableData.appendChild(ahref);
@@ -63,3 +65,4 @@ const similarApp = (tags, blogID) => {
             }
     }
 }
+
