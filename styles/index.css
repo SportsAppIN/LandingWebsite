@@ -828,7 +828,7 @@ footer h4{
     }
 }
 
-@media only screen and (max-width:398px){
+@media only screen and (max-width:512px){
   
     h1{
         font-size: 40px !important;
